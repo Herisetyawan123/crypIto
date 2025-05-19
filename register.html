@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - cryPIto</title>
+    <meta name="description" content="Create your account and start your cryptocurrency journey with cryPIto" />
+    <meta name="author" content="cryPIto" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <h1>cry<span>PI</span>to</h1>
+        </div>
+        <nav id="main-nav">
+          <div class="hamburger" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cryptocurrencies.html">Cryptocurrencies</a></li>
+            <li><a href="learn.html">Learn</a></li>
+            <li><a href="benefits.html">Benefits</a></li>
+            <li><a href="register.html" class="active register-btn">Register</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <!-- Register Section -->
+      <section class="register-section">
+        <div class="register-content">
+          <h2>Create Your cryPIto Account</h2>
+          <p>Join our platform to start buying, selling, and trading cryptocurrencies with ease.</p>
+          
+          <form id="registration-form" class="registration-form">
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+              <span class="error-message" id="fullName-error"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="Enter your email address">
+              <span class="error-message" id="email-error"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" placeholder="Create a strong password">
+              <span class="error-message" id="password-error"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="confirmPassword">Confirm Password</label>
+              <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password">
+              <span class="error-message" id="confirmPassword-error"></span>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+              <span class="error-message" id="phone-error"></span>
+            </div>
+            
+            <div class="form-group checkbox-group">
+              <input type="checkbox" id="termsAgree" name="termsAgree">
+              <label for="termsAgree">I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></label>
+              <span class="error-message" id="termsAgree-error"></span>
+            </div>
+            
+            <button type="submit" class="btn-primary" id="register-btn">Create Account</button>
+          </form>
+          
+          <div class="login-link">
+            <p>Already have an account? <a href="#">Login here</a></p>
+          </div>
+        </div>
+        
+        <div class="register-image">
+          <img src="images/register-image.png" alt="Register for cryPIto">
+        </div>
+      </section>
+      
+      <footer>
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>cry<span>PI</span>to</h2>
+            <p>Empowering your financial future through cryptocurrency</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cryptocurrencies.html">Cryptocurrencies</a></li>
+                <li><a href="learn.html">Learn</a></li>
+                <li><a href="benefits.html">Benefits</a></li>
+                <li><a href="register.html">Register</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Resources</h3>
+              <ul>
+                <li><a href="#">API Documentation</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">News</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Contact</h3>
+              <ul>
+                <li>Email: info@crypito.com</li>
+                <li>Phone: +1 (123) 456-7890</li>
+                <li>Address: 123 Blockchain St, Digital City</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 cryPIto. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="js/register.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

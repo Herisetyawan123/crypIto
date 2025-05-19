@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cryptocurrencies - cryPIto</title>
+    <meta name="description" content="Explore the top cryptocurrencies and market trends" />
+    <meta name="author" content="cryPIto" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <h1>cry<span>PI</span>to</h1>
+        </div>
+        <nav id="main-nav">
+          <div class="hamburger" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cryptocurrencies.html" class="active">Cryptocurrencies</a></li>
+            <li><a href="learn.html">Learn</a></li>
+            <li><a href="benefits.html">Benefits</a></li>
+            <li><a href="register.html" class="register-btn">Register</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <!-- Hot Coins Section -->
+      <section class="hot-coins">
+        <div class="section-header">
+          <h2>Top 4 Hot Coins</h2>
+        </div>
+        
+        <div class="coin-grid" id="hot-coins-grid">
+          <!-- Hot coins will be loaded here via JavaScript -->
+          <div class="loader" id="hot-coins-loader"></div>
+        </div>
+      </section>
+      
+      <!-- All Cryptocurrencies Section -->
+      <section class="all-cryptocurrencies">
+        <div class="section-header">
+          <h2>All Cryptocurrencies</h2>
+          <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search cryptocurrency...">
+          </div>
+        </div>
+        
+        <div class="stats-container">
+          <div class="stat-card">
+            <h3>Market Cap</h3>
+            <p id="total-market-cap">$0</p>
+          </div>
+          <div class="stat-card">
+            <h3>24h Volume</h3>
+            <p id="total-volume">$0</p>
+          </div>
+          <div class="stat-card">
+            <h3>BTC Dominance</h3>
+            <p id="btc-dominance">0%</p>
+          </div>
+        </div>
+
+        <div class="crypto-table-container">
+          <table id="crypto-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>24h %</th>
+                <th>7d %</th>
+                <th>Market Cap</th>
+                <th>Volume (24h)</th>
+              </tr>
+            </thead>
+            <tbody id="crypto-data">
+              <!-- Data will be inserted here by JavaScript -->
+              <tr>
+                <td colspan="7" class="loading-row">Loading cryptocurrency data...</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      
+      <div class="selected-crypto" id="selected-crypto">
+        <div class="close-button" id="close-details">×</div>
+        <div id="crypto-details"></div>
+      </div>
+      
+      <footer>
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h2>cry<span>PI</span>to</h2>
+            <p>Empowering your financial future through cryptocurrency</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cryptocurrencies.html">Cryptocurrencies</a></li>
+                <li><a href="learn.html">Learn</a></li>
+                <li><a href="benefits.html">Benefits</a></li>
+                <li><a href="register.html">Register</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Resources</h3>
+              <ul>
+                <li><a href="#">API Documentation</a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">News</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h3>Contact</h3>
+              <ul>
+                <li>Email: info@crypito.com</li>
+                <li>Phone: +1 (123) 456-7890</li>
+                <li>Address: 123 Blockchain St, Digital City</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 cryPIto. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+    
+    <div class="overlay" id="overlay"></div>
+    
+    <script src="js/cryptocurrencies.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
